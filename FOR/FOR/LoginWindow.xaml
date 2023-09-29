@@ -1,0 +1,35 @@
+﻿<Window x:Class="FOR.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FOR"
+        mc:Ignorable="d"
+          Title="LoginWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Фон.jpg"/>
+        </Grid.Background>
+        <Label Grid.Row="0" Content="Авторизация" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center" Margin="0,44,0,356"/>
+        <StackPanel Margin="228,83,228,115">
+            <Label Content="Login:" Width="120"/>
+            <TextBox x:Name="txtLogin" Background="{x:Null}"  Width="120">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="#FF2590BD" Opacity="0.2"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+            <Label Content="Password:"  Width="120"/>
+            <PasswordBox x:Name="txtPassword" Background="{x:Null}"  Width="120">
+                <PasswordBox.BorderBrush>
+                    <SolidColorBrush Color="#FF2590BD" Opacity="0.2"/>
+                </PasswordBox.BorderBrush>
+            </PasswordBox>
+            <Button Content="Login" Click="btnLogin_Click" Width="120">
+                <Button.Background>
+                    <SolidColorBrush Color="#FF2590BD" Opacity="0.3"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Registration" Click="btnReg_Click" Width="120" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        </StackPanel>
+    </Grid>
+</Window>
